@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-15T00:23:15.488Z",
-    "end": "2024-08-15T00:23:20.932Z",
-    "duration": 5444,
-    "testsRegistered": 1,
+    "start": "2024-08-18T22:46:13.587Z",
+    "end": "2024-08-18T22:46:36.745Z",
+    "duration": 23158,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,25 +18,102 @@
   },
   "results": [
     {
-      "uuid": "4607e840-08d6-4521-b3c9-3e6feec9659c",
+      "uuid": "a3ba3566-4a7e-4619-aff0-55e2bb24fb1f",
       "title": "",
-      "fullFile": "C:\\Users\\giorg\\OneDrive\\Desktop\\advancedSelenium\\tests\\elements\\textBox.js",
-      "file": "\\tests\\elements\\textBox.js",
+      "fullFile": "",
+      "file": "",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "29e64787-6719-4f94-a9d4-3572aaac6a50",
+          "uuid": "f9a1b30f-9a32-4e7d-9478-703916e1a507",
+          "title": "Check the boxes",
+          "fullFile": "C:\\Users\\Admin\\Desktop\\demoqa-tasks\\demoqa-tasks\\tests\\elements\\checkBox.js",
+          "file": "\\tests\\elements\\checkBox.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Check the boxes\"",
+              "fullTitle": "Check the boxes \"before all\" hook in \"Check the boxes\"",
+              "timedOut": false,
+              "duration": 660,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = new Builder().forBrowser(\"chrome\").build();\nawait driver.manage().window().maximize();",
+              "err": {},
+              "uuid": "4bcc1766-34e4-4a66-8dad-351562e02b40",
+              "parentUUID": "f9a1b30f-9a32-4e7d-9478-703916e1a507",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Check the boxes\"",
+              "fullTitle": "Check the boxes \"after all\" hook in \"Check the boxes\"",
+              "timedOut": false,
+              "duration": 44,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if (driver) {\n  await driver.quit();\n}",
+              "err": {},
+              "uuid": "81352481-9811-4650-b471-e6371870f0c4",
+              "parentUUID": "f9a1b30f-9a32-4e7d-9478-703916e1a507",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Checks the box successfully",
+              "fullTitle": "Check the boxes Checks the box successfully",
+              "timedOut": false,
+              "duration": 12598,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"https://demoqa.com/checkbox\");\nawait clickVisibleArrows(driver);\nawait clickAllArrows(driver);\nawait checkBoxes(driver);",
+              "err": {},
+              "uuid": "35c2c48a-5107-4e4a-b0ed-cef0a0f3c2f3",
+              "parentUUID": "f9a1b30f-9a32-4e7d-9478-703916e1a507",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "35c2c48a-5107-4e4a-b0ed-cef0a0f3c2f3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12598,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "e7f72f54-0cec-4c45-b142-d027ad5d770d",
           "title": "Test the website.",
-          "fullFile": "C:\\Users\\giorg\\OneDrive\\Desktop\\advancedSelenium\\tests\\elements\\textBox.js",
+          "fullFile": "C:\\Users\\Admin\\Desktop\\demoqa-tasks\\demoqa-tasks\\tests\\elements\\textBox.js",
           "file": "\\tests\\elements\\textBox.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook in \"Test the website.\"",
               "fullTitle": "Test the website. \"before all\" hook in \"Test the website.\"",
               "timedOut": false,
-              "duration": 1377,
+              "duration": 705,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +122,8 @@
               "context": null,
               "code": "driver = await new Builder().forBrowser(\"chrome\").build();\nawait driver.manage().window().maximize();",
               "err": {},
-              "uuid": "8bcb8b45-e7e8-449a-82a8-5404d1610ef0",
-              "parentUUID": "29e64787-6719-4f94-a9d4-3572aaac6a50",
+              "uuid": "13b99250-35f0-48ce-989e-70cea605f982",
+              "parentUUID": "e7f72f54-0cec-4c45-b142-d027ad5d770d",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +133,7 @@
               "title": "\"after all\" hook in \"Test the website.\"",
               "fullTitle": "Test the website. \"after all\" hook in \"Test the website.\"",
               "timedOut": false,
-              "duration": 67,
+              "duration": 50,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +142,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "63e4a3f0-581f-471e-9adb-0ee9ac935778",
-              "parentUUID": "29e64787-6719-4f94-a9d4-3572aaac6a50",
+              "uuid": "4e89086b-3ad7-4056-9c80-a980228e1e0d",
+              "parentUUID": "e7f72f54-0cec-4c45-b142-d027ad5d770d",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +153,7 @@
               "title": "First test is this.",
               "fullTitle": "Test the website. First test is this.",
               "timedOut": false,
-              "duration": 3990,
+              "duration": 9096,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,20 +162,20 @@
               "context": null,
               "code": "await driver.get(\"https://demoqa.com/text-box\");\nconst waitTime = 5000;\nasync function filler(byLocator, timer) {\n  try {\n    let element = await driver.wait(until.elementLocated(byLocator), timer);\n    return element;\n  } catch (error) {\n    console.error(\"Error for locator:\", error);\n    throw error;\n  }\n}\nconst arr = [\n  { tUser: \"User\" },\n  { tEmail: \"user@gmail.com\" },\n  { tAddres: \"Random address N777\" },\n  { tPeraddres: \"Random permanent address N777\" },\n];\ntry {\n  let username = await filler(By.id(\"userName\"), waitTime);\n  await username.sendKeys(arr[0].tUser);\n  let usernameValue = await username.getAttribute(\"value\");\n  expect(usernameValue).to.equal(arr[0].tUser);\n  let userEmail = await filler(By.id(\"userEmail\"), waitTime);\n  await userEmail.sendKeys(arr[1].tEmail);\n  let userEmailValue = await userEmail.getAttribute(\"value\");\n  expect(userEmailValue).to.equal(arr[1].tEmail);\n  let currentAddress = await filler(By.id(\"currentAddress\"), waitTime);\n  await currentAddress.sendKeys(arr[2].tAddres);\n  let currentAddressValue = await currentAddress.getAttribute(\"value\");\n  expect(currentAddressValue).to.equal(arr[2].tAddres);\n  let permanentAddress = await filler(By.id(\"permanentAddress\"), waitTime);\n  await permanentAddress.sendKeys(arr[3].tPeraddres, Key.RETURN);\n  let permanentAddressValue = await permanentAddress.getAttribute(\"value\");\n  expect(permanentAddressValue.trim()).to.equal(arr[3].tPeraddres);\n} catch (error) {\n  console.error(\"Error has been caught\", error);\n}",
               "err": {},
-              "uuid": "9747b658-6356-4df9-8a1a-21b60d9cb6b2",
-              "parentUUID": "29e64787-6719-4f94-a9d4-3572aaac6a50",
+              "uuid": "de7335ee-d3f8-4a0f-b231-3f048cb1d6a9",
+              "parentUUID": "e7f72f54-0cec-4c45-b142-d027ad5d770d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9747b658-6356-4df9-8a1a-21b60d9cb6b2"
+            "de7335ee-d3f8-4a0f-b231-3f048cb1d6a9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3990,
+          "duration": 9096,
           "root": false,
           "rootEmpty": false,
           "_timeout": 0
